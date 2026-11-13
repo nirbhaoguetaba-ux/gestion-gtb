@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="carBody" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="wheel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" rx="16" fill="url(#bg)"/>
+  
+  <!-- Studio Floor Glow -->
+  <ellipse cx="300" cy="275" rx="240" ry="25" fill="#3b82f6" opacity="0.15"/>
+  <ellipse cx="300" cy="285" rx="220" ry="12" fill="#000000" opacity="0.4"/>
+
+  <!-- Badge Top Right -->
+  <rect x="440" y="24" width="136" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="508" y="45" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#60a5fa" text-anchor="middle">PEUGEOT 208 GT</text>
+
+  <!-- Car Shadow -->
+  <ellipse cx="300" cy="270" rx="210" ry="18" fill="#020617" opacity="0.8" filter="url(#shadow)"/>
+
+  <!-- Car Body Main Group -->
+  <g filter="url(#shadow)">
+    <!-- Main Body Chassis -->
+    <path d="M90 230 C95 210 115 195 140 195 L200 190 L270 120 C285 105 320 100 375 102 L440 115 C470 125 490 155 505 185 L525 215 C535 230 530 250 515 255 L105 255 C95 255 88 245 90 230 Z" fill="url(#carBody)"/>
+    
+    <!-- Roof and Cabin Glass -->
+    <path d="M265 125 L210 188 L460 188 L430 125 C410 112 300 110 265 125 Z" fill="url(#glass)"/>
+    <!-- Window Pillar -->
+    <path d="M330 120 L320 188 L345 188 L350 120 Z" fill="#1e293b"/>
+    <path d="M410 124 L420 188 L432 188 L422 124 Z" fill="#1e293b"/>
+
+    <!-- Headlight signature Peugeot Claw -->
+    <path d="M490 195 L520 205 L500 215 Z" fill="#38bdf8"/>
+    <path d="M510 215 L518 245 L512 245 Z" fill="#38bdf8"/>
+    <!-- Taillight -->
+    <path d="M92 215 L115 218 L110 230 L95 228 Z" fill="#ef4444"/>
+
+    <!-- Front Bumper & Grill Details -->
+    <path d="M480 230 L525 232 L515 252 L475 252 Z" fill="#0f172a" opacity="0.6"/>
+    <!-- Door handle -->
+    <rect x="290" y="196" width="24" height="6" rx="3" fill="#1e3a8a"/>
+    <rect x="380" y="196" width="24" height="6" rx="3" fill="#1e3a8a"/>
+
+    <!-- Wheel Arch Left -->
+    <path d="M140 255 A45 45 0 0 1 230 255 Z" fill="#0f172a"/>
+    <!-- Wheel Arch Right -->
+    <path d="M390 255 A45 45 0 0 1 480 255 Z" fill="#0f172a"/>
+  </g>
+
+  <!-- Left Wheel -->
+  <g transform="translate(185, 255)">
+    <circle r="38" fill="url(#wheel)"/>
+    <circle r="26" fill="#475569" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Rim Spokes -->
+    <circle r="12" fill="#0f172a"/>
+    <path d="M-22 0 L22 0 M0 -22 L0 22 M-15 -15 L15 15 M-15 15 L15 -15" stroke="#cbd5e1" stroke-width="3"/>
+    <circle r="6" fill="#3b82f6"/>
+  </g>
+
+  <!-- Right Wheel -->
+  <g transform="translate(435, 255)">
+    <circle r="38" fill="url(#wheel)"/>
+    <circle r="26" fill="#475569" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Rim Spokes -->
+    <circle r="12" fill="#0f172a"/>
+    <path d="M-22 0 L22 0 M0 -22 L0 22 M-15 -15 L15 15 M-15 15 L15 -15" stroke="#cbd5e1" stroke-width="3"/>
+    <circle r="6" fill="#3b82f6"/>
+  </g>
+
+  <!-- Front Headlight Flare -->
+  <circle cx="518" cy="210" r="4" fill="#fff" opacity="0.9"/>
+  <line x1="518" y1="210" x2="570" y2="230" stroke="#38bdf8" stroke-width="3" opacity="0.4"/>
+</svg>

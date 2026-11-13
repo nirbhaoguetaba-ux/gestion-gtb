@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg_merc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141118"/>
+      <stop offset="100%" stop-color="#241b2c"/>
+    </linearGradient>
+    <linearGradient id="carBody_merc" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="40%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="glass_merc" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4c1d95" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" rx="16" fill="url(#bg_merc)"/>
+  <ellipse cx="300" cy="275" rx="240" ry="25" fill="#a78bfa" opacity="0.12"/>
+  <ellipse cx="300" cy="285" rx="220" ry="12" fill="#000000" opacity="0.5"/>
+
+  <rect x="400" y="24" width="176" height="32" rx="16" fill="#1e1b2e" stroke="#3b3552" stroke-width="1"/>
+  <text x="488" y="45" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#c084fc" text-anchor="middle">MERCEDES CLASSE A</text>
+
+  <g>
+    <!-- Mercedes Hatchback Body -->
+    <path d="M85 230 C90 205 110 195 138 195 L205 190 L275 116 C290 102 330 98 385 102 L445 116 C475 125 498 155 515 186 L530 216 C538 230 532 250 518 254 L100 254 C90 254 84 245 85 230 Z" fill="url(#carBody_merc)"/>
+    <path d="M270 122 L215 188 L465 188 L435 122 C415 110 305 108 270 122 Z" fill="url(#glass_merc)"/>
+    <path d="M335 118 L325 188 L350 188 L355 118 Z" fill="#1e1b2e"/>
+    <path d="M415 120 L425 188 L437 188 L427 120 Z" fill="#1e1b2e"/>
+
+    <!-- High Tech LED Eyebrow -->
+    <path d="M495 196 L524 206 L506 216 Z" fill="#38bdf8"/>
+    <path d="M88 215 L112 218 L108 230 L90 228 Z" fill="#ef4444"/>
+
+    <!-- Wheel Arches -->
+    <path d="M138 254 A45 45 0 0 1 228 254 Z" fill="#0f0c1a"/>
+    <path d="M395 254 A45 45 0 0 1 485 254 Z" fill="#0f0c1a"/>
+  </g>
+
+  <!-- Left Wheel -->
+  <g transform="translate(183, 254)">
+    <circle r="38" fill="#1e293b"/>
+    <circle r="26" fill="#334155" stroke="#e2e8f0" stroke-width="2"/>
+    <circle r="12" fill="#0f172a"/>
+    <circle r="6" fill="#c084fc"/>
+  </g>
+  <!-- Right Wheel -->
+  <g transform="translate(440, 254)">
+    <circle r="38" fill="#1e293b"/>
+    <circle r="26" fill="#334155" stroke="#e2e8f0" stroke-width="2"/>
+    <circle r="12" fill="#0f172a"/>
+    <circle r="6" fill="#c084fc"/>
+  </g>
+</svg>

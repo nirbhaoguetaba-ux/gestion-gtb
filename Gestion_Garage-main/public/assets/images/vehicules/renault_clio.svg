@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg_renault" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141808"/>
+      <stop offset="100%" stop-color="#242c10"/>
+    </linearGradient>
+    <linearGradient id="carBody_renault" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#eab308"/>
+      <stop offset="40%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </linearGradient>
+    <linearGradient id="glass_renault" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0e7490" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" rx="16" fill="url(#bg_renault)"/>
+  <ellipse cx="300" cy="275" rx="240" ry="25" fill="#eab308" opacity="0.15"/>
+  <ellipse cx="300" cy="285" rx="220" ry="12" fill="#000000" opacity="0.5"/>
+
+  <rect x="420" y="24" width="156" height="32" rx="16" fill="#1f240d" stroke="#3d4918" stroke-width="1"/>
+  <text x="498" y="45" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#facc15" text-anchor="middle">RENAULT CLIO V</text>
+
+  <g>
+    <!-- Renault Clio Body -->
+    <path d="M90 230 C95 210 115 195 140 195 L200 190 L270 120 C285 105 320 100 375 102 L440 115 C470 125 490 155 505 185 L525 215 C535 230 530 250 515 255 L105 255 C95 255 88 245 90 230 Z" fill="url(#carBody_renault)"/>
+    <path d="M265 125 L210 188 L460 188 L430 125 C410 112 300 110 265 125 Z" fill="url(#glass_renault)"/>
+    <path d="M330 120 L320 188 L345 188 L350 120 Z" fill="#1c1917"/>
+    <path d="M410 124 L420 188 L432 188 L422 124 Z" fill="#1c1917"/>
+
+    <!-- Renault C-Shape LED -->
+    <path d="M495 198 L522 206 L510 220 Z" fill="#fef08a"/>
+    <path d="M92 215 L115 218 L110 230 L95 228 Z" fill="#ef4444"/>
+
+    <path d="M140 255 A45 45 0 0 1 230 255 Z" fill="#1c1917"/>
+    <path d="M390 255 A45 45 0 0 1 480 255 Z" fill="#1c1917"/>
+  </g>
+
+  <g transform="translate(185, 255)">
+    <circle r="38" fill="#292524"/>
+    <circle r="26" fill="#44403c" stroke="#d6d3d1" stroke-width="2"/>
+    <circle r="12" fill="#1c1917"/>
+    <circle r="6" fill="#eab308"/>
+  </g>
+  <g transform="translate(435, 255)">
+    <circle r="38" fill="#292524"/>
+    <circle r="26" fill="#44403c" stroke="#d6d3d1" stroke-width="2"/>
+    <circle r="12" fill="#1c1917"/>
+    <circle r="6" fill="#eab308"/>
+  </g>
+</svg>

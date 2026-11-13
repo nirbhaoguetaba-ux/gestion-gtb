@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarTechGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="80" fill="url(#avatarTechGrad2)"/>
+  <circle cx="80" cy="55" r="28" fill="#f8fafc"/>
+  <path d="M30 145 C35 105 60 95 80 95 C100 95 125 105 130 145 Z" fill="#f8fafc"/>
+  <circle cx="120" cy="120" r="18" fill="#38bdf8" stroke="#ffffff" stroke-width="3"/>
+  <path d="M125 111 C123 111 121 112 120 114 L114 120 C113 121 113 123 114 124 L116 126 C117 127 119 127 120 126 L126 120 C128 119 129 117 129 115 C129 113 127 111 125 111 Z" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg_audi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b131a"/>
+      <stop offset="100%" stop-color="#14212e"/>
+    </linearGradient>
+    <linearGradient id="carBody_audi" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="40%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="glass_audi" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bae6fd" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" rx="16" fill="url(#bg_audi)"/>
+  <ellipse cx="300" cy="275" rx="240" ry="25" fill="#0284c7" opacity="0.15"/>
+  <ellipse cx="300" cy="285" rx="220" ry="12" fill="#000000" opacity="0.5"/>
+
+  <rect x="420" y="24" width="156" height="32" rx="16" fill="#111c26" stroke="#1e3447" stroke-width="1"/>
+  <text x="498" y="45" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="middle">AUDI A4 AVANT</text>
+
+  <g>
+    <!-- Audi Body -->
+    <path d="M80 232 C85 208 105 198 135 198 L210 192 L280 115 C300 102 345 98 400 100 L465 115 C495 125 520 160 535 192 L548 218 C555 232 550 250 530 254 L95 254 C85 254 78 245 80 232 Z" fill="url(#carBody_audi)"/>
+    <path d="M275 120 L220 190 L480 190 L450 120 C425 108 310 106 275 120 Z" fill="url(#glass_audi)"/>
+    <path d="M350 115 L340 190 L365 190 L370 115 Z" fill="#0f172a"/>
+    <path d="M430 118 L440 190 L452 190 L442 118 Z" fill="#0f172a"/>
+
+    <!-- Matrix LED Audi -->
+    <path d="M515 200 L542 208 L526 218 Z" fill="#ffffff"/>
+    <path d="M82 216 L110 218 L105 230 L85 228 Z" fill="#ef4444"/>
+
+    <path d="M135 254 A46 46 0 0 1 227 254 Z" fill="#082f49"/>
+    <path d="M410 254 A46 46 0 0 1 502 254 Z" fill="#082f49"/>
+  </g>
+
+  <g transform="translate(181, 254)">
+    <circle r="40" fill="#0f172a"/>
+    <circle r="28" fill="#334155" stroke="#cbd5e1" stroke-width="2.5"/>
+    <circle r="12" fill="#0369a1"/>
+  </g>
+  <g transform="translate(456, 254)">
+    <circle r="40" fill="#0f172a"/>
+    <circle r="28" fill="#334155" stroke="#cbd5e1" stroke-width="2.5"/>
+    <circle r="12" fill="#0369a1"/>
+  </g>
+</svg>
