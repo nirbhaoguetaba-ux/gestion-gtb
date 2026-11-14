@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: gestion-gtb
+    env: docker
+    plan: free
+    rootDir: Gestion_Garage-main
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: APP_NAME
+        value: "Garage Mécano D-CLIC"
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        value: base64:RyGAjB8HXS5K0dySsvAUckoJr7Br690x9vE69cYAXlg=
+      - key: DB_CONNECTION
+        value: sqlite
+      - key: DB_DATABASE
+        value: /var/www/html/database/database.sqlite
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: SESSION_DRIVER
+        value: file
+      - key: CACHE_DRIVER
+        value: file
